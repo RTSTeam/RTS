@@ -27,7 +27,7 @@ public class RegistrationResource {
 	@POST
 	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
 	public RTSUserInfo execute(
-			@FormParam("userid") String userid,
+			@FormParam("username") String userid,
 			@FormParam("password") String password,
 			@FormParam("fname") String fname,
 			@FormParam("lname") String lname,
