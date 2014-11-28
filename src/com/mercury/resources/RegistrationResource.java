@@ -38,7 +38,10 @@ public class RegistrationResource {
 		rtsuser.setPassword(password);
 		rtsuser.setFname(fname);
 		rtsuser.setLname(lname);
-		rtsuser.setBirthday(birthday);
+		String[] content = birthday.split(" ");
+		StringBuffer sb = new StringBuffer();
+		sb.append(content[1]).append("/").append(content[2]).append("/").append(content[3]);
+		rtsuser.setBirthday(sb.toString());
 		rtsuser.setEmail(email);
 		return rs.process(rtsuser);
 	}

@@ -17,7 +17,7 @@ public class RegistrationDaoImpl implements RegistrationDao{
 	@Override
 	public void save(RTSUser rtsuser) {
 		// TODO Auto-generated method stub
-		Object[] params = {rtsuser.getUserID(), rtsuser.getPassword(), rtsuser.getFname(), rtsuser.getLname(), rtsuser.getBirthday(), rtsuser.getEmail(), "VALID"};
+		Object[] params = {rtsuser.getUserID(), rtsuser.getPassword(), rtsuser.getFname(), rtsuser.getLname(), rtsuser.getBirthday(), rtsuser.getEmail(), "ROLE_USER"};
 		String sql = "insert into RTSUser values(?,?,?,?,?,?,?)";
 		template.update(sql, params);
 	}
