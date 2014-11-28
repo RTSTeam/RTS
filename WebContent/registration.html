@@ -24,7 +24,7 @@
         </div>
   
         <div>
-          Email:
+
           <input type="email" ng-model="user.email" name="email" ng-model-options="{ updateOn: 'blur' }"  class="form-control" placeholder="Email" required />
           <div ng-show="userForm.email.$dirty && form.email.$invalid">Invalid:
               <span ng-show="userForm.email.$error.required">Tell us your email.</span>
